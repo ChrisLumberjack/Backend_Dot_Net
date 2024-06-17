@@ -1,0 +1,15 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<script src="~/js/authGoogle.js" type="module" asp-append-version="true"></script>
+
+<div class="text-center">
+    <h1 class="display-4">Bienvenido</h1>
+    <p>Aprende sobre <a href="https://learn.microsoft.com/aspnet/core">construir aplicaciones web con ASP.NET Core</a>.</p>
+
+    <!-- Botón para iniciar sesión con Google -->
+    <button class="btn btn-primary" onclick="signInWithGoogle()">Iniciar sesión con Google</button>
+</div>

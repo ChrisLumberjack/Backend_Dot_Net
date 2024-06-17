@@ -1,0 +1,7 @@
+﻿@BackendNet_HostAddress = https://localhost:7298
+
+
+GET {{BackendNet_HostAddress}}/api/user/users/alovelace/
+
+###
+

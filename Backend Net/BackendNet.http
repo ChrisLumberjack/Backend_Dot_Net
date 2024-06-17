@@ -1,0 +1,15 @@
+﻿@BackendNet_HostAddress = https://localhost:7298
+@Backend_Net_HostAddress = https://localhost:7298
+
+GET {{Backend_Net_HostAddress}}/api/user/users/alovelace
+###
+
+POST {{BackendNet_HostAddress}}/api/user?collectionName=users
+Content-Type: application/json
+{
+    "Prueba2": ["dfsgdfsgdfg"],
+    "dos": "Mathison",
+    "Claro": "Turing",
+    "Edad": 1912 
+}
+###
