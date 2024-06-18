@@ -33,6 +33,17 @@
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
+    },
+    "Doppler": {
+      "commandName": "Executable",
+      "executablePath": "doppler",
+      "commandLineArgs": "run -- dotnet run dotnet run --launch-profile https --environment Development",
+      "launchBrowser": true,
+      "applicationUrl": "https://localhost:7298;http://localhost:5007",
+      "workingDirectory": "$(ProjectDir)",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
     }
   }
 }

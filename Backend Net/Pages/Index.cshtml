@@ -2,7 +2,28 @@
 @model IndexModel
 @{
     ViewData["Title"] = "Home page";
+    string apiKey = Environment.GetEnvironmentVariable("APIKEY");
+    string authDomain = Environment.GetEnvironmentVariable("AUTHDOMAIN");
+    string projectId = Environment.GetEnvironmentVariable("PROJECTID");
+    string storageBucket = Environment.GetEnvironmentVariable("STORAGEBUCKET");
+    string messagingSenderId = Environment.GetEnvironmentVariable("MESSAGINGSENDERID");
+    string appId = Environment.GetEnvironmentVariable("APPID");
+    string measurementId = Environment.GetEnvironmentVariable("MEASUREMENTID");
 }
+
+<script>
+    // Definir las variables de configuración de Firebase en el HTML
+    const firebaseConfig = {
+        apiKey: "@Html.Raw(apiKey)",
+        authDomain: "@Html.Raw(authDomain)",
+        projectId: "@Html.Raw(projectId)",
+        storageBucket: "@Html.Raw(storageBucket)",
+        messagingSenderId: "@Html.Raw(messagingSenderId)",
+        appId: "@Html.Raw(appId)",
+        measurementId: "@Html.Raw(measurementId)"
+    };
+</script>
+
 
 <script src="~/js/authGoogle.js" type="module" asp-append-version="true"></script>
 
