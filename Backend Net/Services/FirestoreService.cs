@@ -15,7 +15,7 @@ namespace Backend_Net.Services
         }
 
         private readonly FirestoreDb _db;
-        private readonly string _name = "backendnet-c442c";
+        private readonly string _name = Environment.GetEnvironmentVariable("PROJECT_ID");
 
         public FirestoreService()
         {
